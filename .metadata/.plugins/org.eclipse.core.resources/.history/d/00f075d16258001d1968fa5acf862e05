@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pesquisar por ID</title>
+</head>
+<body>
+	<h2> Mostrar Livros</h2><br>
+	<form action="mostrarLivros">
+	<label> Codigo do Livro:</label>
+	<input type="text" name="codLivro">
+	<button type="submit">Buscar</button>
+	
+	</form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<%@ page import="com.livraria.dao.*"%>
+<jsp:useBean id="u" class="com.livraria.bean.Livro"></jsp:useBean>
+
+<%
+	int i = LivroDao.alterar(livro);
+%>

@@ -1,0 +1,31 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Consulta livros</title>
+</head>
+<body>
+	<%@ page import="com.livraria.dao.LivroDao, com.livraria.bean.*, java.util.*"%>	
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<%
+		List<Livro> list = LivroDao.listar();
+		request.setAttribute("list", list);
+	%>
+	
+	<table>
+		<tr><th>ID</th><th>Titulo</th><th>Autor</th><th>Categoria</th><th>Preço</th></tr>
+		<c:forEach items="${list}" var="livro">
+			<tr>
+				<td>${livro.getCodlivro()}</td>
+				<td>${livro.getTitulo()}</td>
+				<td>${livro.getAutor()}</td>
+				<td>${livro.getCodlivro()}</td>
+				<td>${livro.getCodlivro()}</td>
+			</tr>
+		</c:forEach>
+	</table>
+</body>
+</html>

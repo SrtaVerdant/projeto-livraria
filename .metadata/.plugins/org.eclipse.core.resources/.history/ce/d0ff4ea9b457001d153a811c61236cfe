@@ -1,0 +1,9 @@
+<%@ page import="com.livraria.dao.LivroDao"%>
+<jsp:useBean id="u" class="com.livraria.bean.Livro"></jsp:useBean>
+<jsp:setProperty property="*" name="u"/>
+
+<%
+	
+	
+	System.out.println(u.getAutor());
+%>

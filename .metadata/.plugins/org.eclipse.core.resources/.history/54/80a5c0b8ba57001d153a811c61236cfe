@@ -1,0 +1,10 @@
+<%@ page import="com.livraria.dao.LivroDao"%>
+<jsp:useBean id="livro" class="com.livraria.bean.Livro"></jsp:useBean>
+<jsp:setProperty property="*" name="livro"/>
+
+<%
+	int i = LivroDao.alterar(livro);
+	response.sendRedirect("editar.jsp");
+	
+
+%>

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\gabri\Desktop\workspace-aulaservidor\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4247443537.index
+\ProjetoLivraria\src\main\java
